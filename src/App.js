@@ -3,8 +3,9 @@ import './resources/styles.css';
 
 import Hedear from './components/header_footer/Header';
 import Featured from './components/featured/Featured';
-import VenueInfo from './components/venue_info/VenueInfo'
-import Highlights from './components/highlights/Highlights'
+import VenueInfo from './components/venue_info/VenueInfo';
+import Highlights from './components/highlights/Highlights';
+import Pricing from './components/pricing/Pricing';
 
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
         <Featured/>
         <VenueInfo/>
         <Highlights/>
+        <Pricing/>
     </div>
   );
 }
