@@ -1,5 +1,6 @@
 import React from 'react';
 import './resources/styles.css';
+import { Element } from 'react-scroll';
 
 import Hedear from './components/header_footer/Header';
 import Featured from './components/featured/Featured';
@@ -14,11 +15,21 @@ function App() {
   return (
     <div className="App" style={{height:"1500px" , background: 'cornflower'}}>
         <Hedear/>
-        <Featured/>
-        <VenueInfo/>
-        <Highlights/>
-        <Pricing/>
-        <Location/>
+        <Element name={"featured"}>
+            <Featured/>
+        </Element>
+        <Element name={"venueinfo"}>
+            <VenueInfo/>
+        </Element>
+        <Element name={"highlights"}>
+            <Highlights/>
+        </Element>
+        <Element name={"pricing"}>
+            <Pricing/>
+        </Element>
+        <Element name={"location"}>
+            <Location/>
+        </Element>
         <Footer/>
     </div>
   );
