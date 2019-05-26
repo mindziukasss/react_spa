@@ -1,6 +1,8 @@
 import React, {Component} from 'react';
 import Fade from 'react-reveal/Fade';
-import Slide from 'react-reveal/Slide';
+import Slide from 'react-reveal/Slide'
+
+import MyButton from '../utils/MyButton'
 
 class Discount extends Component {
     state = {
@@ -43,9 +45,12 @@ class Discount extends Component {
                                 page when looking at its layout. The point of using Lorem Ipsum is that it has a
                                 more-or-less normal distribution of letters, as opposed to using 'Content here, content
                                 here', making it look like readable English. Many desktop publishing packages</p>
-                            <div>
-                                BUTTON
-                            </div>
+                            <MyButton
+                            text={"Purchase tickets"}
+                            bck={"#ffa800"}
+                            color={'#ffffff'}
+                            link={"http://gmail.com"}
+                            />
                         </div>
                     </Slide>
                 </div>
