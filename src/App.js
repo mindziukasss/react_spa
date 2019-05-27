@@ -1,6 +1,7 @@
 import React from 'react';
 import './resources/styles.css';
 import { Element } from 'react-scroll';
+import { Helmet } from 'react-helmet'
 
 import Hedear from './components/header_footer/Header';
 import Featured from './components/featured/Featured';
@@ -13,7 +14,11 @@ import Footer from './components/header_footer/Footer';
 
 function App() {
   return (
-    <div className="App" style={{height:"1500px" , background: 'cornflower'}}>
+    <div className="App">
+        <Helmet>
+            <title>The Venue</title>
+            <meta name="description" content="This is what you want to show as the page content in the Google SERP Listing" />
+        </Helmet>
         <Hedear/>
         <Element name={"featured"}>
             <Featured/>
